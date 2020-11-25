@@ -1,0 +1,3 @@
+PyExecJs
+requests
+baidu-aip

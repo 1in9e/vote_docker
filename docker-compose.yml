@@ -1,0 +1,9 @@
+version: "2"
+services:
+  vote:
+    build: .
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./vote:/vote/
+    restart: always
