@@ -216,8 +216,8 @@ class getVotes(threading.Thread):
 def main():
 	domains = []
 	queue1 = queue.Queue()
-	for _ in range(10000,99999):
-		ouidVal = "460" + str(_)
+	for _ in range(100000,218800):
+		ouidVal = "46" + str(_)
 		queue1.put(ouidVal)
 	threads = []
 	# 线程数
@@ -230,7 +230,7 @@ def main():
 	for t in threads:
 		t.join()
 	
-	# print("[+++]Over!本次运行脚本共计投票{votes}次".format(votes=str(this_votes)))
+	print("[+++]Over!本次运行脚本共计投票{votes}次".format(votes=str(this_votes)))
 
 if __name__ == '__main__':
 	main()
