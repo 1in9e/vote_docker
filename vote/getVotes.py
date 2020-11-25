@@ -216,7 +216,7 @@ class getVotes(threading.Thread):
 def main():
 	domains = []
 	queue1 = queue.Queue()
-	for _ in range(100000,218800):
+	for _ in range(500000,618800):
 		ouidVal = "46" + str(_)
 		queue1.put(ouidVal)
 	threads = []
